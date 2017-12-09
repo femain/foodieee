@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/sb-admin.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="css/plugins/morris.css" rel="stylesheet">
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+          <script src="http://cdn.oesmith.co.uk/morris-0.4.1.min.js"></script>
+        <meta charset=utf-8 />
+             <html>
+                    <head>
+                        <title>Report</title>
+    </head>
+    <body>
+
+
+                  <div data-role="header"data-position="fixed" style="text-align:center;">
+                          <h2 style="text-align:center;" >Hospital Quality Report</h2>
+                          
+                      <a  href="#page-top">HOME </a>
+                      
+                       </div>
+           <section>
+            <div class="row">
+                <h2 style="text-align:center;" >Hospital Report</h2>
+                <div class="col-lg-1">
+                        </div>
+                    <div class="col-lg-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Quality Score</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                                <div id="donut-quality"></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Patient Safety Score</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="morris-donut-chart"></div>
+                                <div id="donut-safety"></div>
+                                
+                                    <div class="text-right">
+                                        <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            </div>
+                        </section>
+             <hr>
+                    <section>
+             <div class="row">
+                 
+                    <h3 style="text-align:center;">Hospital Leadership Management</h3>
+                <div class="col-lg-1"></div>
+                        
+                    <div class="col-lg-10">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Hospital Leadership Management</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                                <div id="bar-hlm"></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-lg-1"></div>
+                </div>
+                </section>
+                <hr>
+                <section>
+             <div class="row">
+                    <h3 style="text-align:center;">Strategic Planning Management</h3>
+                    
+                <div class="col-lg-1"></div>
+                
+                    <div class="col-lg-10">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Strategic Planning Management</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="morris-bar-chart"></div>
+                                    <div id="bar-spm"></div>
+                                    <div class="text-right">
+                                        <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1"></div>
+                                
+                        
+                </div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Care Process Management</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-red">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Care Process Management</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-cpm"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Quality Management</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-green">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Quality Management</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-qm"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Risk & Patient Safety Management</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Risk & Patient Safety Management</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-rpsm"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Human Resource Management</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-yellow">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Human Resource Management</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-hrm"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Resource Management</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-red">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Resource Management</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-rm"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+<hr>
+<section>
+<div class="row">
+
+<h3 style="text-align:center;">Outcomes</h3>
+<div class="col-lg-1"></div>
+    
+<div class="col-lg-10">
+    <div class="panel panel-green">
+        <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Outcomes</h3>
+        </div>
+        <div class="panel-body">
+            <div id="morris-bar-chart"></div>
+            <div id="bar-om"></div>
+            <div class="text-right">
+                <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-1"></div>
+</div>
+</section>
+
+               
+
+<div data-role="footer"data-position="fixed" style="text-align:center;">
+        
+       <p class="intro-text">A Quality & Patient Safety Audit Tool for Hospitals.
+          <br>Created by BestRatedHospitals.</p>
+       </div</div>
+
+
+
+<script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script>
+<script>
+    Morris.Donut({
+  element: 'donut-quality',
+  data: [
+    {label: "Hospital Leadership Management", value: 10},
+    {label: "Strategic Planning Management", value: 12},
+    {label: "Care Process Management", value: 14},
+    {label: "Quality Management", value: 16},
+    {label: "Risk and Patient Safety Management", value: 18},
+    {label: "Human Resources Management", value: 20},
+    {label: "Resource Management", value: 22},
+    {label: "Outcomes", value: 24}
+  ]
+});
+</script>
+
+<script>
+        Morris.Donut({
+      element: 'donut-safety',
+      data: [
+        {label: "Download Sales", value: 12},
+        {label: "In-Store Sales", value: 10},
+        {label: "Mail-Order Sales", value: 20}
+      ]
+    });
+    </script>
+
+    <script>
+        Morris.Bar({
+  element: 'bar-hlm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-spm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+  Morris.Bar({
+  element: 'bar-cpm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-qm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-rpsm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-hrm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-rm',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+
+
+  Morris.Bar({
+  element: 'bar-om',
+  data: [
+    { y: 'Jan', a: 100, b: 90 },
+    { y: 'Feb', a: 75,  b: 65 },
+    { y: 'Mar', a: 50,  b: 40 },
+    { y: 'Apr', a: 75,  b: 65 },
+    { y: 'May', a: 50,  b: 40 },
+    { y: 'Jun', a: 75,  b: 65 },
+    { y: 'Jul', a: 100, b: 90 },
+    { y: 'Aug', a: 50,  b: 40 },
+    { y: 'Sep', a: 75,  b: 65 },
+    { y: 'Oct', a: 50,  b: 40 },
+    { y: 'Nov', a: 75,  b: 65 },
+    { y: 'Dec', a: 100, b: 90 }
+  ],
+  xkey: 'y',
+  ykeys: ['a'],
+  labels: ['Series A', 'Series B']});
+</script>
+
+    
+    </body>
+</html>
