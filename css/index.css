@@ -24,30 +24,30 @@ body {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-color:rgb(137, 50, 149);
+    background-image:linear-gradient(top, rgb(130, 223, 230) 0%, rgb(98, 118, 231) 51%);
     background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
     background-image:-webkit-gradient(
         linear,
         left top,
         left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
+        color-stop(0, #fff),
+        color-stop(0.51, #fff)
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
     height:100%;
-    margin:0px;
-    padding:0px;
+    margin:5px;
+    padding:5px;
     text-transform:capitalize;
     width:100%;
 }
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/1.jpg) no-repeat center top; /* 170px x 200px */
+    background:url(../.jpg) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
     top:50%;
@@ -71,7 +71,7 @@ body {
 
 h1 {
     font-size:24px;
-    font-weight:normal;
+    font-weight:bold;
     margin:0px;
     overflow:visible;
     padding:0px;
@@ -119,7 +119,7 @@ h1 {
 
 body {
     margin-top: 100px;
-    background-color: rgb(196, 229, 238);
+    background-color: rgb(222, 238, 196);
 }
 
 @media(min-width:768px) {
@@ -145,7 +145,7 @@ body {
 
 @media(min-width:768px) {
     #wrapper {
-        padding-left: 225px;
+        padding-left: 2225px;
     }
 
     #page-wrapper {
@@ -161,7 +161,7 @@ body {
 
 .top-nav>li {
     display: inline-block;
-    float: left;
+   
 }
 
 .top-nav>li>a {
@@ -283,8 +283,8 @@ ul.alert-dropdown {
     font-size: 40px;
 }
 
-.panel-green {
-    border-color: #5cb85c;
+.panel-blue {
+    border-color: #0ad8f3;
 }
 
 .panel-green > .panel-heading {
@@ -305,10 +305,10 @@ ul.alert-dropdown {
     border-color: #d9534f;
 }
 
-.panel-red > .panel-heading {
-    border-color: #d9534f;
+.panel-blue > .panel-heading {
+    border-color: #3e4fe7;
     color: #fff;
-    background-color: #d9534f;
+    background-color: #5047d1;
 }
 
 .panel-red > a {
@@ -336,3 +336,9 @@ ul.alert-dropdown {
 .panel-yellow > a:hover {
     color: #df8a13;
 }
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+

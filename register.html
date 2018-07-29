@@ -16,6 +16,14 @@
 		<link rel="stylesheet" href="assets/css/form-elements.css">
         <link rel="stylesheet" href="assets/css/style.css">
 
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -33,19 +41,44 @@
     </head>
 
     <body>
+            <nav class="navbar navbar-light navbar-expand-lg navbar-light fixed-top" style="background-color: #e3f2fd;">
 
+                    <div class="container">
+                      <a class="navbar-brand js-scroll-trigger" href="index.html">HEALTHIER </a>
+                    
+                      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                      
+                        <i class="fa fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="about.com">ABOUT</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="login.html">LOGIN</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="register.html">CREATE ACCOUNT</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="cart.html">CART</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link js-scroll-trigger" href="promo.html">SPECIAL OFFER</a>
+                                </li>
+                        </ul>
+                      </div>
+                    
+                    </div>
+                  
+                  </nav>
         <!-- Top content -->
         <div class="top-content">
         	
             <div class="inner-bg">
                 <div class="container">
-                	
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2 text">
-                            <h1>Foodsafe</h1>
-                            
-                        </div>
-                    </div>
+                
                     
                     <div class="row">
                        
@@ -66,23 +99,17 @@
 	                            </div>
 	                            <div class="form-bottom">
 				                    <form role="form" action="" method="post" class="registration-form">
-                                            <div class="form-group">
-                                                    <label class="sr-only" for="form-email">Organization</label>
-                                                    <input type="text" name="form-email" placeholder="Organization" class="form-email form-control" id="form-email">
-                                                </div>
+                                          
 
-                                                <div class="form-group">
-                                                        <label>Choose Organization Type:</label>
+                                                <div class="form-group" class= "centre">
+                                                       
                                                         <label class="radio-inline">
-                                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Vendor
+                                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Provider
                                                         </label>
                                                         <label class="radio-inline">
-                                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Inspector
+                                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">User
                                                         </label>
 
-                                                        <label class="radio-inline">
-                                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option2">None
-                                                            </label>
                                                         
                                                     </div>
 
