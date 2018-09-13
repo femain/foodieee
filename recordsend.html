@@ -389,23 +389,34 @@
                      
                        
                                 <div class="input-group" style="width: 90%">
-                                    <label>Vaccine</label>
+                                    <label>Test</label>
                                     
                                     <textarea class="form-control" aria-label="With textarea"></textarea>
                                   </div>
                                   <br />
                                   <div class="input-group" style="width: 90%">
-                                    <label>Batch Number</label>
+                                    <label>Value</label>
                                     
                                     <textarea class="form-control" aria-label="With textarea"></textarea>
                                   </div>
                                   <br />
-                                 
+                                  <div class="input-group" style="width: 90%">
+                                    <label>Upper Range</label>
+                                    
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                  </div>
+                                  <br />
+                                  <div class="input-group" style="width: 90%">
+                                    <label>Lower Range</label>
+                                    
+                                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                                  </div>
+                                  <br />
     
                                  
 
                                   <div class="form-group" style="width: 90%">
-                                        <label>Vaccine Expiry Date</label>
+                                        <label>Test Date</label>
                                       <div class='input-group date' id='datetimepicker1'>
                                           <input type='date' class="form-control" />
                                           <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -427,7 +438,7 @@
                                           </div>
        
                                           <div class="form-group" style="width: 90%">
-                                            <label>Vaccination Staff</label>
+                                            <label>Attending Staff</label>
                                           <div class='input-group glyphicon-person' id='datetimepicker1'>
                                               <input type='text' class="form-control" />
                                               <span class="input-group-addon"><span class="glyphicon glyphicon-person"></span>
@@ -435,15 +446,8 @@
                                           </div>
                                       </div>
                                           
-                                      <div class="form-group" style="width: 90%">
-                                            <label>Next Vaccine Date</label>
-                                          <div class='input-group date' id='datetimepicker1'>
-                                              <input type='date' class="form-control" />
-                                              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
-                                              </span>
-                                          </div>
-                                      </div>
-     <button type="submit" class="btn btn-info">Send Vaccine Report</button>
+                                    
+     <button type="submit" class="btn btn-info">Send Lab Report</button>
     
                
     </div> 
@@ -451,10 +455,7 @@
                             </div>
                         </div>
            
-                date, test, value, upper range, lower range
-                Test Date
-                Test Time
-                Provider Staff
+              
         </div>
           <div class="tab-pane" id="4a" style="width:100%;height:80%">
                 <div class="col-lg-9">
@@ -464,7 +465,7 @@
                             <div class="panel-body" style="padding-left: 30px">
                                
                                   <div class="form-group" style="width: 90%">
-                                        <label>Upload Report</label>
+                                        <label>Upload Prescription</label>
                                       <div class='input-group date' id='datetimepicker1'>
                                           <input type='file' class="form-control" />
                                          
@@ -473,13 +474,13 @@
                      
                        
                                 <div class="input-group" style="width: 90%">
-                                    <label>Vaccine</label>
+                                    <label>Drug</label>
                                     
                                     <textarea class="form-control" aria-label="With textarea"></textarea>
                                   </div>
                                   <br />
                                   <div class="input-group" style="width: 90%">
-                                    <label>Batch Number</label>
+                                    <label>Dose </label>
                                     
                                     <textarea class="form-control" aria-label="With textarea"></textarea>
                                   </div>
@@ -489,7 +490,7 @@
                                  
 
                                   <div class="form-group" style="width: 90%">
-                                        <label>Vaccine Expiry Date</label>
+                                        <label>Duration</label>
                                       <div class='input-group date' id='datetimepicker1'>
                                           <input type='date' class="form-control" />
                                           <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -500,7 +501,7 @@
                                     <br />
                                     
                                               <div class="form-group" style="width: 90%">
-                                                    <label>Next Vaccine Date</label>
+                                                    <label>Date</label>
                                                   <div class='input-group date' id='datetimepicker1'>
                                                       <input type='date' class="form-control" />
                                                       <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -518,7 +519,7 @@
                                           </div>
        
                                           <div class="form-group" style="width: 90%">
-                                            <label>Vaccination Staff</label>
+                                            <label>Consulting Staff</label>
                                           <div class='input-group glyphicon-person' id='datetimepicker1'>
                                               <input type='text' class="form-control" />
                                               <span class="input-group-addon"><span class="glyphicon glyphicon-person"></span>
@@ -527,7 +528,8 @@
                                       </div>
                                           
           
-     <button type="submit" class="btn btn-info">Send Vaccine Report</button>
+     <button type="submit" class="btn btn-info">Send Prescription</button>
+     <button type="submit" class="btn btn-info">Prescribe</button>
     
                
     </div> 
@@ -535,10 +537,7 @@
                             </div>
                         </div>
             
-        - drugname, dosage, duration,
-        Test Date
-        Test Time
-        Provider Staff
+       
                 </div>
             <div class="tab-pane" id="5a" style="width:100%;height:80%">
                     <div class="col-lg-9">
